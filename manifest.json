@@ -2,13 +2,13 @@
   "name": "Food Cheque — Premium Nigerian Cuisine",
   "short_name": "Food Cheque",
   "description": "Oghara's finest restaurant. Order premium Nigerian cuisine online.",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#FFFBF4",
   "theme_color": "#C85A0A",
   "lang": "en",
-  "scope": "/",
+  "scope": "./",
   "categories": ["food", "lifestyle", "shopping"],
   "icons": [
     {

@@ -38,7 +38,7 @@ const CATEGORIES = [
 ];
 
 const DELIVERY_FEE    = 1500;
-const WHATSAPP_NUMBER = '2348012345678'; // ← Replace with real WhatsApp number
+const WHATSAPP_NUMBER = '2348055311844';
 const BANK_NAME       = 'First Bank of Nigeria';
 const ACCOUNT_NAME    = 'Food Cheque Restaurant';
 const ACCOUNT_NUM     = '3012345678';
@@ -401,6 +401,13 @@ const placeOrder = () => {
   }
   if (!confirm) {
     window.FC.Toast.error('Please confirm that you have completed the payment');
+    return;
+  }
+  if (!uploadedFile) {
+    window.FC.Toast.error('Please upload your payment receipt before confirming');
+    document.getElementById('uploadArea')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementById('uploadArea')?.classList.add('upload-required');
+    setTimeout(() => document.getElementById('uploadArea')?.classList.remove('upload-required'), 2500);
     return;
   }
   if (cart.length === 0) {
