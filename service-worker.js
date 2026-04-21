@@ -18,8 +18,8 @@ const PRECACHE_ASSETS = [
   '/script.js',
   '/menu.js',
   '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  '/favicon/web-app-manifest-192x192.png',
+  '/favicon/web-app-manifest-512x512.png',
   // Bootstrap (CDN — will be cached on first visit)
 ];
 

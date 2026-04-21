@@ -7,11 +7,11 @@
 // ── Menu Data ─────────────────────────────────────────────────
 const MENU_ITEMS = [
   // Rice Dishes
-  { id: 1, category: 'rice',   name: 'Signature Jollof Rice',    desc: 'Party-style smoky jollof with tender fried chicken, fried plantain & coleslaw.',                price: 3500, img: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&q=80', badge: 'Bestseller'   },
+  { id: 1, category: 'rice',   name: 'Signature Jollof Rice',    desc: 'Party-style smoky jollof with tender fried chicken, fried plantain & coleslaw.',                price: 3500, img: 'https://images.pexels.com/photos/17952745/pexels-photo-17952745.jpeg?auto=compress&cs=tinysrgb&w=800', badge: 'Bestseller'   },
   { id: 2, category: 'rice',   name: 'Fried Rice & Chicken',     desc: 'Golden stir-fried long-grain rice with mixed veggies, shrimp & crispy fried chicken.',          price: 3800, img: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80', badge: null           },
   { id: 3, category: 'rice',   name: 'Ofada Rice & Ayamase',     desc: 'Native brown rice served with rich green pepper Ayamase sauce & assorted meat.',                 price: 4000, img: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80', badge: 'Local Fave'   },
   // Soups & Swallows
-  { id: 4, category: 'soups',  name: 'Egusi Soup & Pounded Yam', desc: 'Rich melon-seed soup cooked with assorted meats, stockfish & leafy greens.',                     price: 4200, img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80', badge: "Chef's Pick"  },
+  { id: 4, category: 'soups',  name: 'Egusi Soup & Pounded Yam', desc: 'Rich melon-seed soup cooked with assorted meats, stockfish & leafy greens.',                     price: 4200, img: 'https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&q=80', badge: "Chef's Pick"  },
   { id: 5, category: 'soups',  name: 'Ofe Onugbu (Bitter Leaf)', desc: 'Delta-style bitter leaf soup with cocoyam, ofe akwu & hearty assorted proteins.',               price: 3900, img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80', badge: null           },
   { id: 6, category: 'soups',  name: 'Ogbono Soup & Eba',        desc: 'Silky draw soup with wild mango seeds, smoked fish, assorted meat & garri eba.',                  price: 4100, img: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80', badge: null           },
   // Grills & BBQ
