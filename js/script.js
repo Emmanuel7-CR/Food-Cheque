@@ -145,8 +145,8 @@ const initPWA = () => {
               <div class="ios-app-url">foodcheque.ng</div>
             </div>
           </div>
-          <h3 class="ios-sheet-title">Add to Home Screen</h3>
-          <p class="ios-sheet-sub">Install Food Cheque for instant access — works like a native app, no App Store needed.</p>
+          <h3 class="ios-sheet-title">Install Food Cheque</h3>
+          <p class="ios-sheet-sub">Order faster, reopen instantly, and use Food Cheque like a native app. — works like a native app, no App Store needed.</p>
         </div>
         <div class="ios-steps">
           <div class="ios-step">
@@ -209,6 +209,16 @@ const initPWA = () => {
   const dismissBtn = document.getElementById('dismissInstall');
 
   const showBanner = () => { banner?.classList.add('visible'); };
+
+  document.addEventListener('fc:showInstallBanner', () => {
+  const isInstalled =
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.navigator.standalone === true;
+
+  if (isInstalled) return;
+
+  showBanner();
+});
   const hideBanner = () => { banner?.classList.remove('visible'); };
 
   /* ── Trigger native install prompt ──────────────────────── */
@@ -237,7 +247,7 @@ const initPWA = () => {
 
     // Update banner button text & behaviour
     if (installBtn) {
-      installBtn.textContent = '📲 How to Install';
+      installBtn.textContent = 'Add App';
       installBtn.addEventListener('click', () => {
         document.getElementById('iosSheet')?.classList.add('open');
         document.body.style.overflow = 'hidden';

@@ -619,17 +619,27 @@
 </footer>
 
 <!-- ── PWA Install Banner ─────────────────────────────────── -->
-<div class="install-banner" id="installBanner" role="banner" aria-label="Install App">
-  <div class="install-banner-content">
-    <div class="install-icon">🍽️</div>
-    <div>
-      <div class="install-title">Install Food Cheque</div>
-      <div class="install-sub">Add to home screen for quick access</div>
+<!-- Premium Install Card -->
+<div class="fc-install-wrap" id="installBanner" aria-label="Install Food Cheque App">
+  <div class="fc-install-card">
+
+    <button class="fc-install-close" id="dismissInstall" aria-label="Dismiss">
+      ✕
+    </button>
+
+    <div class="fc-install-top">
+      <div class="fc-install-icon">FC</div>
+
+      <div class="fc-install-meta">
+        <h4>Food Cheque</h4>
+        <p>Quick ordering • Faster checkout • Home screen access</p>
+      </div>
     </div>
-  </div>
-  <div class="install-actions">
-    <button class="install-btn" id="installBtn">Install</button>
-    <button class="install-dismiss" id="dismissInstall" aria-label="Dismiss">✕</button>
+
+    <div class="fc-install-actions">
+      <button class="fc-install-btn" id="installBtn">Add App</button>
+    </div>
+
   </div>
 </div>
 

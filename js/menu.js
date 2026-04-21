@@ -475,7 +475,12 @@ _Please confirm receipt & start preparing._ 🧡
   if (previewEl) previewEl.style.display = 'none';
   if (defaultEl) defaultEl.style.display = 'block';
 
-  window.FC.Toast.success('Order sent via WhatsApp! 🎉');
+ window.FC.Toast.success('Order sent via WhatsApp! 🎉');
+
+// Delay slightly so toast appears first
+setTimeout(() => {
+  document.dispatchEvent(new CustomEvent('fc:showInstallBanner'));
+}, 1800);
 };
 
 // ── Search ────────────────────────────────────────────────────
